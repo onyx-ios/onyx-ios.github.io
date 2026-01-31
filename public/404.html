@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ONYX - Premium Wallpapers</title>
+    <script>
+      // GitHub Pages SPA redirect
+      // This script redirects 404s to the index page with the path preserved
+      const path = window.location.pathname;
+      const search = window.location.search;
+      const hash = window.location.hash;
+      
+      // Don't redirect static files
+      if (!path.match(/\.(html|css|js|png|jpg|jpeg|gif|svg|ico|json|txt|xml)$/i)) {
+        sessionStorage.setItem('redirect', path + search + hash);
+        window.location.replace('/');
+      }
+    </script>
+  </head>
+  <body>
+    <noscript>
+      <meta http-equiv="refresh" content="0; url=/" />
+    </noscript>
+  </body>
+</html>
