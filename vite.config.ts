@@ -6,7 +6,6 @@ export default defineConfig({
   base: '/',
   build: {
     outDir: 'dist',
-    // --- BURAYI EKLE ---
     rollupOptions: {
       output: {
         entryFileNames: 'assets/[name].js',
